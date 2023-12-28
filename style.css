@@ -5,11 +5,13 @@
 
 body {
 	
-	background-color : #F9FAFC;
+	background-color : #EBF2FF;
 
 	font-family : 'Merriweather', serif;
 
 }
+/*--- Header CSS --------------------------------------------------------------------------------------------*/
+/*--- Navbar CSS -------------------------------------------------------------------------------------------*/
 
 .navbar {
 
@@ -17,6 +19,7 @@ body {
 	display : flex;
 	align-items : center;
 	justify-content : space-around;
+	background-color : #FFF;
 
 }
 
@@ -34,9 +37,9 @@ body {
 	/* border : 3px solid blue; */
 }
 
-/*-----------------------------------------------------------------------------------------------*/
+/*--- Button CSS -------------------------------------------------------------------------------------------*/
 
-.nav__item {
+.button__primary {
 
 	background-image : linear-gradient(
 		to right,	/* direction */
@@ -53,27 +56,421 @@ body {
 	font-weight : 600;
 }
 
-.nav__item:hover {
-	border : 2px solid blue;
+.button__primary:hover {
+	border : 1px solid fuchsia;
 	cursor : pointer;
 }
 
-/*-----------------------------------------------------------------------------------------------*/
+/*--- Main CSS --------------------------------------------------------------------------------------------*/
+
+	/*--- Section-1 ------------------------------------------------------------------------------------------*/
+
+.container {
+	max-width : 100%;
+	padding : 20px;
+	margin : 0 auto;
+}
+
+.hero__image__container {
+	width : 100%;
+	position : relative;
+}
+
+.hero__shape {
+	position : absolute;
+	top : 20%;
+	left : 0;
+	width : 100%;
+	height : 100%;
+	z-index : -1;
+}
+
+.hero__bg__pattern {
+	position : absolute;
+	top : -10%;
+	left : 5%;
+	width : 100%;
+	height : auto;
+	z-index : -2;
+}
+
+.hero__image {
+	width : 100%;
+
+	border-radius : 8px;
+	box-shadow : 0 25px 50px -12px rgb(0 0 0 / 25%);		/* horizantal, vertical, blur, spread radius */
+}
+
+.hero__text {
+	
+	margin : 40px 0;
+
+	font-size : 30px;
+	font-weight : 800;
+	color : #1D3557;
+}
+	/*--- Section-2 ------------------------------------------------------------------------------------------*/
+.food__card {
+	background-color : #F9F9F9;
+	border-radius : 8px;
+}
+
+.food__card__image__container {
+	width : 100%;
+}
+
+.food__image {
+	width : 100%;
+	border-radius : 8px 8px 0 0;
+}
+
+.food__card__description {
+	padding : 15px;
+}
+
+.explore__menu__text {
+	margin-top : 30px;
+	margin-bottom : 20px;
+
+	text-align : center;
+	color : #1D3557;
+	font-size : 30px;
+	font-weight : 800;
+}
+
+	/*--- Section-3 ------------------------------------------------------------------------------------------*/
+.restaurant__section{
+	margin-bottom : 20px;
+}
+
+.restaurant__text {
+
+	margin-top : 30px;
+
+	text-align : left;
+	color : #1D3557;
+	font-size : 30px;
+	font-weight : 800;
+}
+
+.restaurant__section__image__container {
+	margin-top : 20px;
+	display : flex;
+	flex-direction : column;
+	gap : 12px;
+}
+
+.restaurant__image__collage__1 {
+
+	display : flex;
+	gap : 8px;
+	justify-content : space-evenly;
+	align-items : baseline;
+}
+
+.restaurant__image__collage__2 {
+
+	display : flex;
+	flex-direction : row-reverse;
+	gap : 8px;
+	justify-content : space-evenly;
+	align-items : flex-start;
+}
+
+.restaurant__image__1 {
+	width : 40%;
+	border-radius : 6px;
+	box-shadow : 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
+.restaurant__image__2 {
+	width : 60%;
+	height : 100px;
+	border-radius : 6px;
+	box-shadow : 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
+.restaurant__image__3 {
+	width : 40%;
+	height : 80px;
+	border-radius : 6px;
+	box-shadow : 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
+.restaurant__image__4 {
+	width : 60%;
+	height : 100px;
+	border-radius : 6px;
+	box-shadow : 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
+	/*--- Section-4 ------------------------------------------------------------------------------------------*/
+.subscribe__field {
+
+}
+.subscribe__box__container {
+	
+	margin-top : 30px;
+}
+.subscribe__text {
+
+	margin-bottom : 20px;
+	text-align : left;
+	color : #1D3557;
+	font-size : 50px;
+	font-weight : 800;
+}
+.subscribe__field__container {
+
+	display : flex;
+	gap : 6px;
+	align-items : center;
+
+} 
+
+.input__field {
+	width : 200px;
+	height : 40px;
+
+	border : 1px solid #ee89a0;
+	background-color : #fcedf0;
+	color: #1d3557;
+
+	font-weight: 700;
+	border-radius : 6px;
+
+	padding : 2px;
+}
+	/*--- Section-5 ------------------------------------------------------------------------------------------*/
+.quote__container {
+	position : relative;
+	padding : 5px;
+
+	margin-top : 50px;
+}
+.quote__container__image__container {
+	width : 100%;
+	height : 25%;
+}
+.quote__container__image {
+	width : 100%;
+	height : 100%;
+
+	border-radius : 12px;
+	z-index : -1;
+}
+.quote__container__text {
+	position : absolute;
+	top : 25%;
+	left : 0;
+
+	text-align : center;
+	color : white;
+
+	padding : 0 10px;
+}
+
+/*--- footer CSS --------------------------------------------------------------------------------------------*/
+
+.footer__container {
+	background-image : linear-gradient(
+		to right,	/* direction */
+		#ff512f 0%,	/* 0% indicates the beginning */
+		#dd2476 51%,
+		#ff512f 100%
+	);
+
+	border-top-left-radius : 36px;
+	border-top-right-radius : 36px;
+
+
+	display : flex;
+	flex-direction : column;
+	justify-content : center;
+	align-items : center;
+}
+.footer__logo {
+
+	width : 200px;
+}
+.footer__logo__image {
+	width : 100%;
+	filter : brightness(2000%);
+}
+
+.footer__list {
+
+}
+
+.footer__list__elements {
+	color : white;
+	text-align : left;
+	padding : 6px;
+	font-size : 12px;
+}
+
+/*--- Media Queries ----------------------------------------------------------------------------------------*/
 
 @media (min-width : 768px) {
 	.navbar {
 		justify-content : space-between;
 		padding: 10px 30px;
 	}
+
+	.hero__container {
+		margin-top : 20px;
+		display : flex;
+		flex-direction : row-reverse;
+		align-items : center;
+	}
+
+	.explore__menu__lists {
+		margin-top : 40px;
+		display : flex;
+		gap : 15px;
+
+		padding : 0 30px;
+	}
+	
+
+	.explore__menu__container {
+
+		margin-top : 100px;
+		position : relative;
+		padding-bottom : 80px;
+	}
+
+	.explore__menu__gradient__bg {
+		position : absolute;
+		top : 0;
+		bottom : 0;
+		width : 100%;
+		height : 100%;
+		background-image : linear-gradient(
+			to right,	/* direction */
+			#ff512f 0%,	/* 0% indicates the beginning */
+			#dd2476 51%,
+			#ff512f 100%
+		);
+		z-index : -3;
+		transform : skewY(-8deg);
+	}
+
+	#pizza__card {
+		margin-top : -20px;
+		margin-bottom : 20px;
+	}
+
+	.restaurant__section {
+		margin-top : 80px;
+
+		display : flex;
+		flex-direction : row;
+		align-items : center;
+	}
+
+	.restaurant__section__text {
+		width : 100%;
+	}
+	
+	.restaurant__section__image__container {
+		padding : 5px;
+		width : 100%;
+		gap : 20px;
+	}
+
+	.restaurant__image__1 {
+		height : auto;
+	}
+	.restaurant__image__2 {
+		height : auto;
+	}
+	.restaurant__image__3 {
+		height : auto;
+	}
+	.restaurant__image__4 {
+		height : auto;
+	}
+
+	.subscribe__field {
+		margin : 50px 50px;
+		display : flex;
+		justify-content : center;
+	}
+	
+	.input__field {
+		width : 350px;
+	}
+
+	.quote__container__text {
+		top : 50%;
+	}
+
+	.footer__container {
+		flex-direction : row;
+		justify-content : space-around;
+	}
+
 }
 
 @media (min-width : 1024px) {
+
+	.container {
+		max-width : 70%;
+	}
+
 	.navbar__brand {
 		width : 150px;
 	}
 
-	.nav__item {
+	.button__primary {
 		padding : 20px;
 		font-size : 20px;
+	}
+	
+	.hero__description {
+		width : 100%;	
+	}
+
+	.hero__text {
+		font-size : 52px;
+	}
+
+	.explore__menu__text {
+		font-size : 48px;
+	}
+
+	.explore__menu__lists {
+		margin-top : 60px;
+		gap : 25px;
+	}
+
+	.explore__menu__container {
+
+		margin-top : 160px;
+		padding-bottom : 120px;
+	}
+
+	.restaurant__section__image__container {
+		padding : 5px;
+		width : 100%;
+		gap : 40px;
+	}
+
+	.restaurant__image__collage__1 {
+		gap : 20px;
+	}
+	.restaurant__image__collage__2 {
+		gap : 20px;
+	}
+
+	.input__field {
+		height : 60px;
+	}
+
+	.quote__container__image__container {
+		width : 100%;
+		height : 50%;
+	}
+
+	.quote__container__text {
+		margin : 0 75px;
+		padding : 0 75px;
 	}
 }
